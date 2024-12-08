@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'dropdown',
@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './dropdown.component.css'
 })
 export class DropdownComponent {
+  @Input() imageFiles: string[] = []; // Array of images passed from parent
+  selectedImage?: string;
 
+  onFilterChange(selected: string) {
+    this.selectedImage = selected; // Update the displayed image
+  }
 }

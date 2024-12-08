@@ -14,4 +14,14 @@ export class AppComponent {
   subtitleMi = 'Tae o te Whenua - Colours of the Earth ';
   subtitleEng = 'The colours of nature'
   logo = 'assets/nz-palette-logo.png';
+
+    imgSrcFile = 'P1070179.jpg'; // For img-src
+  paletteFile = 'P1070179-Colourful.jpg'; // For palette
+  dropdownFiles = [
+    'P1070210-Colourful.jpg',
+    'P1070210-Bright.jpg',
+    'P1070210-Muted.jpg',
+    'P1070210-Deep.jpg',
+    'P1070210-Dark.jpg'
+  ]; // For dropdown
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'palette',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './palette.component.css'
 })
 export class PaletteComponent {
-
+  @Input() paletteFile!: string;
 }
