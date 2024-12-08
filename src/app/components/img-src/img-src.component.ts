@@ -10,4 +10,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ImgSrcComponent {
   @Input() imageFile!: string;
+
+
 }

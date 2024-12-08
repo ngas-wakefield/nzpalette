@@ -180,21 +180,66 @@
 <main class="main">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-6">
-        <img src="./assets/nz-palette-logo.png" width="100" alt="Image">
-        <h1>Kia ora, {{ title }}</h1>
-        <h3>{{ subtitleMi }}</h3>
-        <i class="bi bi-pinterest fs-1 text-primary" aria-hidden="true"></i>
-
-        <!-- Pass data to child components -->
-        <dropdown [imageFiles]="dropdownFiles"></dropdown>
-        <img-src [imageFile]="imgSrcFile"></img-src>
-
-        <palette [paletteFile]="paletteFile"></palette>
+      <div class="col-12 col-md-6 text-center text-md-start py-4">
+        <img src="./assets/nz-palette-logo.png" width="120" alt="NZ Palette Logo" class="mb-3">
+        <h1 class="display-4 fw-bold text-primary">Kia ora, {{ title }}</h1>
+        <h3 class="text-secondary mb-4">{{ subtitleMi }}</h3>
+        <i class="bi bi-pinterest fs-1 text-danger"></i>
       </div>
+
+    </div>
+    <div class="row">
+      <!-- Palette 1 -->
+
+      <div class="col-6">
+
+        <img-src [imageFile]="'./assets/P1070210.jpg'"></img-src>
+        <div class="d-flex align-items-center">
+          <!-- Dropdown Component -->
+          <dropdown [imageFiles]="dropdownFiles" class="me-3"></dropdown>
+
+          <!-- Pinterest Icon Image -->
+          <img-src [imageFile]="'./assets/pinterest-icon.png'" class="pinterest-icon"></img-src>
+        </div>
+
+        <palette [paletteFile]="'./assets/P1070210-Colourful.jpg'"></palette>
+      </div>
+      <!-- Palette 2 -->
+      <div class="col-6">
+
+        <img-src [imageFile]="'./assets/P1070193.jpg'"></img-src>
+        <div class="d-flex align-items-center">
+          <!-- Dropdown Component -->
+          <dropdown [imageFiles]="dropdownFiles" class="me-3"></dropdown>
+
+          <!-- Pinterest Icon Image -->
+          <img-src [imageFile]="'./assets/pinterest-icon.png'" class="pinterest-icon"></img-src>
+        </div>
+        <palette [paletteFile]="'./assets/P1070193-Colourful.jpg'"></palette>
+      </div>
+      <!-- Palette 3 -->
+      <div class="col-6">
+
+        <img-src [imageFile]="'./assets/P1070179.jpg'"></img-src>
+        <div class="d-flex align-items-center">
+          <!-- Dropdown Component -->
+          <dropdown [imageFiles]="dropdownFiles" class="me-3"></dropdown>
+
+          <!-- Pinterest Icon Image -->
+          <img-src [imageFile]="'./assets/pinterest-icon.png'" class="pinterest-icon"></img-src>
+        </div>
+        <palette [paletteFile]="'./assets/P1070179-Colourful.jpg'"></palette>
+      </div>
+      <!-- Palette 4 -->
+      <!-- <div class="col-6">
+        <dropdown [imageFiles]="dropdownFiles"></dropdown>
+        <img-src [imageFile]="'./assets/P1070400.jpg'"></img-src>
+        <palette [paletteFile]="'./assets/P1070400-Colourful.jpg'"></palette>
+      </div> -->
     </div>
   </div>
 </main>
+
 
 
 

@@ -15,7 +15,7 @@ export class AppComponent {
   subtitleEng = 'The colours of nature'
   logo = 'assets/nz-palette-logo.png';
 
-    imgSrcFile = 'P1070179.jpg'; // For img-src
+    imgSrcFile = ''; // For img-src
   paletteFile = 'P1070179-Colourful.jpg'; // For palette
   dropdownFiles = [
     'P1070210-Colourful.jpg',
