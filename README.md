@@ -1,5 +1,8 @@
 # Nzpalette
 
+Go to website
+https://ngas-wakefield.github.io/nzpalette/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
 
 ## Development server
